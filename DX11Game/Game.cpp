@@ -12,6 +12,9 @@
 #include "DebugProc.h"
 #include "Enemy.h"
 
+//	定数
+const int nEnemyQuantity = 5;
+
 // コンストラクタ
 CGame::CGame() : CScene()
 {
@@ -41,7 +44,7 @@ bool CGame::Init()
 
 	m_pPlayer = new CPlayer(this);
 
-	CEnemy* pEnemy[1];
+	CEnemy* pEnemy[nEnemyQuantity];
 	for (int i = 0; i < _countof(pEnemy); ++i) {
 		pEnemy[i] = new CEnemy(this);
 		pEnemy[i]->SetPlayer(m_pPlayer);

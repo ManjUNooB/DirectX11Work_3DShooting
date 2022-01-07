@@ -7,9 +7,9 @@
 
 // 定数
 namespace {
-	const float g_fSpeed = 0.0f;
-	const float g_fRollSpeed = 0.0f;//単位:度
-	const float g_fPitchSpeed = 0.0f;//単位:度
+	const float g_fSpeed = 10.0f;
+	const float g_fRollSpeed = 10.0f;//単位:度
+	const float g_fPitchSpeed = 5.0f;//単位:度
 }
 
 // コンストラクタ
@@ -29,7 +29,7 @@ CEnemy::~CEnemy()
 HRESULT CEnemy::Init()
 {
 	SetModel(MODEL_ENEMY);
-
+	SetRadius(500.0f);
 	XMFLOAT4X4 mW;
 	XMStoreFloat4x4(&mW, XMMatrixRotationY(XMConvertToRadians(180.0f)));
 	SetWorld(mW);
@@ -74,15 +74,15 @@ void CEnemy::Update()
 	XMStoreFloat4x4(&mW, XMMatrixMultiply(XMLoadFloat4x4(&mW), mR));
 
 	// 前進
-	if (CInput::GetKeyPress(VK_LCONTROL))
-	{
+	//if (CInput::GetKeyPress(VK_LCONTROL))
+	
 		m_vPos.x += vZ.x * g_fSpeed;
 		m_vPos.y += vZ.y * g_fSpeed;
 		m_vPos.z += vZ.z * g_fSpeed;
 		
 		if (m_vPos.z > 10000)
 			m_vPos.z -= vZ.z * g_fSpeed;
-	}
+	
 
 	// ワールド変換行列に反映
 	mW._41 = m_vPos.x;

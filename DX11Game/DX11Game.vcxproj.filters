@@ -34,6 +34,24 @@
     <Filter Include="ヘッダー ファイル\System\Graphics">
       <UniqueIdentifier>{990510fc-5b5b-4b29-8dc2-dad5ba17fc72}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\System\Camera">
+      <UniqueIdentifier>{aa1f4b0c-5c1d-4e4d-a1eb-1d94c7eada0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\System\Scene">
+      <UniqueIdentifier>{4c5973e6-016f-4005-a324-ea54cd98ec20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System\Camera">
+      <UniqueIdentifier>{8d0f10ad-7f2e-4ae5-867c-ce9d38e5ddbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\System\Scene">
+      <UniqueIdentifier>{94756897-ba90-4d57-9ff3-2031a37fb767}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\App\Character">
+      <UniqueIdentifier>{7ce97336-cdf1-46e0-abcd-738a36cab552}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\App\Character">
+      <UniqueIdentifier>{b6cb6b9f-4a55-48aa-90ff-0c11025e0f5d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssimpModel.cpp">
@@ -72,9 +90,6 @@
     <ClCompile Include="Camera.cpp">
       <Filter>ソース ファイル\App</Filter>
     </ClCompile>
-    <ClCompile Include="Enemy.cpp">
-      <Filter>ソース ファイル\App</Filter>
-    </ClCompile>
     <ClCompile Include="Explosion.cpp">
       <Filter>ソース ファイル\App</Filter>
     </ClCompile>
@@ -82,9 +97,6 @@
       <Filter>ソース ファイル\App</Filter>
     </ClCompile>
     <ClCompile Include="Light.cpp">
-      <Filter>ソース ファイル\App</Filter>
-    </ClCompile>
-    <ClCompile Include="Player.cpp">
       <Filter>ソース ファイル\App</Filter>
     </ClCompile>
     <ClCompile Include="Missile.cpp">
@@ -110,6 +122,15 @@
     </ClCompile>
     <ClCompile Include="Fade.cpp">
       <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\Graphics\DirectX11.cpp">
+      <Filter>ソース ファイル\System\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Enemy.cpp">
+      <Filter>ソース ファイル\App\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>ソース ファイル\App\Character</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -161,9 +182,6 @@
     <ClInclude Include="Camera.h">
       <Filter>ヘッダー ファイル\App</Filter>
     </ClInclude>
-    <ClInclude Include="Enemy.h">
-      <Filter>ヘッダー ファイル\App</Filter>
-    </ClInclude>
     <ClInclude Include="Explosion.h">
       <Filter>ヘッダー ファイル\App</Filter>
     </ClInclude>
@@ -174,9 +192,6 @@
       <Filter>ヘッダー ファイル\App</Filter>
     </ClInclude>
     <ClInclude Include="Light.h">
-      <Filter>ヘッダー ファイル\App</Filter>
-    </ClInclude>
-    <ClInclude Include="Player.h">
       <Filter>ヘッダー ファイル\App</Filter>
     </ClInclude>
     <ClInclude Include="Scene.h">
@@ -196,6 +211,15 @@
     </ClInclude>
     <ClInclude Include="Tutorial.h">
       <Filter>ヘッダー ファイル\App</Filter>
+    </ClInclude>
+    <ClInclude Include="System\Graphics\DirectX11.h">
+      <Filter>ヘッダー ファイル\System\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Enemy.h">
+      <Filter>ヘッダー ファイル\App\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>ヘッダー ファイル\App\Character</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

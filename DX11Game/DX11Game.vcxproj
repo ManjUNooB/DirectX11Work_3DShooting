@@ -181,6 +181,7 @@
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="System\Graphics\DirectX11.cpp" />
     <ClCompile Include="Texture.cpp" />
     <ClCompile Include="Title.cpp" />
     <ClCompile Include="Tutorial.cpp" />
@@ -211,6 +212,7 @@
     <ClInclude Include="SoundData.h" />
     <ClInclude Include="SoundData.hpp" />
     <ClInclude Include="Sphere.h" />
+    <ClInclude Include="System\Graphics\DirectX11.h" />
     <ClInclude Include="Texture.h" />
     <ClInclude Include="Title.h" />
     <ClInclude Include="Tutorial.h" />

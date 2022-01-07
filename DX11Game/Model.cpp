@@ -14,8 +14,8 @@
 namespace {
 	LPCSTR g_pszModelPath[MAX_MODEL] = {
 		"data/model/sky.fbx",
-		"data/model/cat.fbx",
-		"data/model/Tuna.fbx",
+		"data/model/PlayerModel.fbx",
+		"data/model/EnemyTank.fbx",
 		"data/model/AIM-120/AIM-120.fbx",
 	};
 }

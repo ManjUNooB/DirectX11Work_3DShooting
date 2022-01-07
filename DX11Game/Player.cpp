@@ -68,11 +68,11 @@ void CPlayer::Update()
 	XMStoreFloat4x4(&mW, XMMatrixMultiply(XMLoadFloat4x4(&mW), mR));
 
 	// 前進
-	if (CInput::GetKeyPress(VK_LCONTROL)) {
+	//if (CInput::GetKeyPress(VK_LCONTROL)) {
 		m_vPos.x += vZ.x * g_fSpeed;
 		m_vPos.y += vZ.y * g_fSpeed;
 		m_vPos.z += vZ.z * g_fSpeed;
-	}
+	
 
 	// ワールド変換行列に反映
 	mW._41 = m_vPos.x;
