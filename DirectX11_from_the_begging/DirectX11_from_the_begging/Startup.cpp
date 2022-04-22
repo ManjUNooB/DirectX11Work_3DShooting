@@ -1,6 +1,6 @@
 //----------------------------------------------------//
 //	Contents	:	Startup.cpp
-//					‰Šú‰»‚¾‚Á‚½‚èWINAPIŠÖ˜A‚¾‚Á‚½‚è
+//					WINAPIŠÖ˜A‚¾‚Á‚½‚è
 //					FPSŠÇ—‚¾‚Á‚½‚è
 //	Author		:	Ryuga Sakakibara
 //	LastUpdate	:	2022/04/20
