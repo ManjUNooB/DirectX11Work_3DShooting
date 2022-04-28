@@ -10,3 +10,28 @@
 #include <App/main.h>
 #include <Defines.h>
 
+#define ASSERT_FAILED(fn) do {\
+hr = fn; \
+if (FAILED(hr)) {\
+	MessageBox(nullptr, "Init_failed : "#fn, "Error", MB_OK);	\
+	return hr;\
+}}while(0)
+
+
+HRESULT Init(HWND hWnd, UINT width, UINT height) {
+	HRESULT hr;
+	
+	return hr;
+}
+
+void Update() {
+
+}
+
+void Draw() {
+
+}
+
+void Uninit() {
+
+}
