@@ -15,4 +15,5 @@
 //	timeGetTime周りの使用
 #pragma comment(lib,"winmm.lib")
 
-//--プロトタイプ宣言--//
+//--プロトタイプ宣言--
+LRESULT CALLBACK
