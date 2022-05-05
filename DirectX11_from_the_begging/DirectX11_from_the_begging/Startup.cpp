@@ -16,4 +16,15 @@
 #pragma comment(lib,"winmm.lib")
 
 //--プロトタイプ宣言--
-LRESULT CALLBACK
+LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
+
+//	エントリポイント
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow) {
+	
+	_CrtSetDbgFlag()	//	メモリリーク検知用
+
+	//--変数宣言--//
+	WNDCLASSEX wcex;
+	HWND hWnd;
+	MSG message;
+}
